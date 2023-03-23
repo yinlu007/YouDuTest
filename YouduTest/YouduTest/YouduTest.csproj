@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E5ECA3A-B57A-4B0A-92FA-B9647C726CDA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YouduTest</RootNamespace>
+    <AssemblyName>YouduTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EasyHttp, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EasyHttp.1.7.0\lib\net40\EasyHttp.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonFx, Version=2.0.1209.2802, Culture=neutral, PublicKeyToken=315052dd637f8a52, processorArchitecture=MSIL">
+      <HintPath>..\packages\JsonFx.2.0.1209.2802\lib\net40\JsonFx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntApp\AES\AESCrypto.cs" />
+    <Compile Include="EntApp\AES\Signature.cs" />
+    <Compile Include="EntApp\AppClient.cs" />
+    <Compile Include="EntApp\EntAppApi.cs" />
+    <Compile Include="EntApp\Exceptions\AESCryptoException.cs" />
+    <Compile Include="EntApp\Exceptions\FileIOException.cs" />
+    <Compile Include="EntApp\Exceptions\GeneralEntAppException.cs" />
+    <Compile Include="EntApp\Exceptions\HttpRequestException.cs" />
+    <Compile Include="EntApp\Exceptions\ParamParserException.cs" />
+    <Compile Include="EntApp\Exceptions\ServiceException.cs" />
+    <Compile Include="EntApp\Exceptions\SignatureException.cs" />
+    <Compile Include="EntApp\Exceptions\UnexpectedException.cs" />
+    <Compile Include="EntApp\Helper.cs" />
+    <Compile Include="EntApp\MessageEntity\AppNotice.cs" />
+    <Compile Include="EntApp\MessageEntity\Const.cs" />
+    <Compile Include="EntApp\MessageEntity\ExlinkBody.cs" />
+    <Compile Include="EntApp\MessageEntity\ExlinkBodyCell.cs" />
+    <Compile Include="EntApp\MessageEntity\FileBody.cs" />
+    <Compile Include="EntApp\MessageEntity\ImageBody.cs" />
+    <Compile Include="EntApp\MessageEntity\IMMessage.cs" />
+    <Compile Include="EntApp\MessageEntity\LinkBody.cs" />
+    <Compile Include="EntApp\MessageEntity\Message.cs" />
+    <Compile Include="EntApp\MessageEntity\MessageBody.cs" />
+    <Compile Include="EntApp\MessageEntity\MpnewsBody.cs" />
+    <Compile Include="EntApp\MessageEntity\MpnewsBodyCell.cs" />
+    <Compile Include="EntApp\MessageEntity\PopWindow.cs" />
+    <Compile Include="EntApp\MessageEntity\ReceiveMessage.cs" />
+    <Compile Include="EntApp\MessageEntity\SessionMessage.cs" />
+    <Compile Include="EntApp\MessageEntity\SysmsgBody.cs" />
+    <Compile Include="EntApp\MessageEntity\TextBody.cs" />
+    <Compile Include="EntApp\SessionEntity\Session.cs" />
+    <Compile Include="EntApp\SessionEntity\SessionMessage.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

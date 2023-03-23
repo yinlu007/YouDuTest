@@ -1,0 +1,15 @@
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\bin\Debug\YouduTest.exe.config
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\bin\Debug\YouduTest.exe
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\bin\Debug\YouduTest.pdb
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\bin\Debug\EasyHttp.dll
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\bin\Debug\JsonFx.dll
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\bin\Debug\EasyHttp.pdb
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\bin\Debug\JsonFx.xml
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\obj\Debug\YouduTest.csproj.AssemblyReference.cache
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\obj\Debug\YouduTest.Form1.resources
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\obj\Debug\YouduTest.Properties.Resources.resources
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\obj\Debug\YouduTest.csproj.GenerateResource.cache
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\obj\Debug\YouduTest.csproj.CoreCompileInputs.cache
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\obj\Debug\YouduTest.csproj.CopyComplete
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\obj\Debug\YouduTest.exe
+E:\项目文档\2023年3月\DWE\消息集成\YouduTest\YouduTest\obj\Debug\YouduTest.pdb
